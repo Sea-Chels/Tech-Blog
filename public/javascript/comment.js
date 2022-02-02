@@ -32,6 +32,4 @@ async function commentFormHandler(event) {
   }
 }
 
-document
-  .getElementById("add-comment")
-  .addEventListener("submit", commentFormHandler);
+document.getElementById("add-comment").addEventListener("submit", commentFormHandler);
