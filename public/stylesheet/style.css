@@ -1,0 +1,146 @@
+:root {
+  --light: #e8ded4;
+  --main-second: #3b5d72;
+  --main-med: #62cdc9;
+  --main-dark: #0000008e;
+  --main: rgb(96, 37, 27);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-bkgrnd);
+  margin: 0;
+  padding: 0;
+  font-family: "Sans", sans-serif;
+  color: var(--main);
+  line-height: 1.5;
+  font-size: 24px;
+}
+
+#nav-bar{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+padding: 1%;
+background-color: var(--main);
+text-align:center;
+}
+#nav-bar a{
+text-decoration: none;
+color: var(--light);
+}
+#nav-bar a:hover{
+  opacity: 70%;
+  color:var(--main-second)
+}
+.title{
+  text-align:center;
+  border-bottom-style:solid;
+  border-bottom-width: 3px;
+  border-bottom-color: var(--main);
+}
+
+#post-container, #dash-post-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 2%;
+}
+#dash-post-container a{
+  text-decoration: none;
+  color:var(--light);
+}
+#dash-post-container a:hover{
+  color:rgb(203, 203, 203);
+  background-color: var(--main);
+}
+.card{
+  margin:2%;
+  /* border-style:solid; */
+  box-shadow: 5px 5px 2px rgb(203, 203, 203);
+  border-radius: 10px;
+  text-align:center;
+}
+#commentform{
+  text-align: center;
+  padding:2%;
+  margin-left:30%;
+  margin-right:30%;
+  background: var(--main);
+  color:white;
+  border-radius:3em;
+}
+#commentform input{
+line-height:2em;
+}
+.comment{
+  text-align: center;
+  border:solid;
+  border-color: var(--main);
+  border-width: 2px;
+  padding:.5%;
+  margin-left:30%;
+  margin-right:30%;
+}
+
+.card-header{
+  /* transform: translate(0%,-27%); */
+  text-decoration: none;
+  background:var(--main);
+  color: var(--light);
+  border-radius: 10px;
+  margin:0;
+  padding:0;
+  border-bottom-style:solid;
+  border-bottom-width: 3px;
+  border-bottom-color: var(--light);
+}
+h2{
+margin-left:10%;
+margin-right:75%;
+border-bottom: solid;
+border-color:var(--main);
+border-width:3px;
+}
+h3 a{
+  text-decoration: none;
+  background:var(--main);
+  color: var(--light);
+}
+h3 a:hover{
+  opacity: 70%;
+  color:var(--main-second)
+}
+#login-container, #signup-container, #new-form-container{
+  margin-left: 25%;
+  margin-right:25%; 
+}
+#login-form, #signup-form, #new-post-form{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2%;
+}
+#login-form input, #signup-form input, #new-post-form input{
+  line-height:2em;
+  margin-bottom:2%;
+}
+#button-container{
+  text-align:center;
+}
+button a{
+  text-decoration: none;
+  color: var(--light);
+}
+button{
+  all: unset;
+  cursor: pointer;
+  background: var(--main-second);
+  color: var(--light);
+  padding:5px;
+  border-radius:5px;
+}
+button:hover{
+  background: var(--main);
+  color: var(--light);
+}
